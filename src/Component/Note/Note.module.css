@@ -1,0 +1,29 @@
+.noteDiv {
+    border:1px solid #dadada ;
+    box-shadow: 0px 5px 5px #00000030  ;
+    width: 200px;
+    /* min-height: 50px; */
+    position: relative;
+}
+
+.noteDiv > h4 {
+    font-weight:bolder !important;
+    padding: 5px;
+    padding-right:20px ;
+    text-wrap: wrap;
+}
+
+.noteDiv > p {
+    margin: 5px !important;
+    padding-right:20px ;
+    text-wrap: wrap;
+}
+
+.deleteIcon {
+    color: #f5ba13;
+    position: absolute;
+    right: 2px;
+    top: 5px;
+    cursor: pointer;
+
+}

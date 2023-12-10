@@ -1,0 +1,48 @@
+.createAreaMainDiv {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.createArea {
+    margin: 30px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 5px 3px #dadada;
+    position: relative;
+}
+
+.title {
+    border:none;
+    padding: 10px;
+    border-bottom: none;
+    width: 100%;
+    outline: none;
+}
+
+
+.textArea {
+    padding: 10px;
+    border: none;
+    width: 100%;
+    outline: none;
+}
+
+.addBtn {
+    position: absolute !important;
+    bottom: -12%;
+    right: -2%;
+    background-color: #f5ba13 !important;  
+}
+.addBtn:hover {
+    background-color: #f3a300 !important;
+}
+
+@media screen and (max-width: 759px) {
+    .createArea{
+        width: 80%;
+    }
+}

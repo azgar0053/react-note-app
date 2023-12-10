@@ -1,0 +1,11 @@
+.App {
+  text-align: center;
+  max-width: 1440px;
+  width: 100%;
+}
+
+.notesDiv {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
