@@ -5,7 +5,7 @@ import Note from './Component/Note/Note';
 import { useEffect, useState } from 'react';
 
 function App() {
-  const [notes, setNotes]= useState([])
+  const [notes, setNotes]= useState(()=>{ return JSON.parse(localStorage.getItem('notes')) ||[]})
 
   function addNote(newNote){
     setNotes(prevNotes=>{
@@ -14,6 +14,7 @@ function App() {
   } 
 
   function deleteNote(id){
+    localStorage.removeItem('notes')
     setNotes(prevNotes=>{
       return prevNotes.filter((noteItem, index)=>{
         return index!== id;
