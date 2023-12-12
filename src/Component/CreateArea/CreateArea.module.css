@@ -21,6 +21,8 @@
     border-bottom: none;
     width: 100%;
     outline: none;
+    font-size: 1.5rem;
+    font-weight:bolder !important;
 }
 
 
@@ -29,6 +31,7 @@
     border: none;
     width: 100%;
     outline: none;
+    font-size: 1rem;
 }
 
 .addBtn {
