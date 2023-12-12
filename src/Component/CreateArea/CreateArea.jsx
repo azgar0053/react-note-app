@@ -36,8 +36,8 @@ const CreateArea=(props)=>{
     return(
         <div className={styles.createAreaMainDiv}>
             <div className={styles.createArea}>
-                <input name="title" onChange={handleChange} value={note.title} placeholder='Title' className={styles.title} style={{display: noteAreaFocus?'block':'none'}}/>
-                <textarea name="content" value={note.content} placeholder="Take a Note" className={styles.textArea} onChange={handleChange} onFocus={()=>setNoteAreaFocus(true)} onBlur={()=>setNoteAreaFocus(false)}/>
+                <input name="title" onChange={handleChange} value={note.title} placeholder='Title' className={styles.title} style={{display: noteAreaFocus?'block':'none'}} onBlur={()=>setNoteAreaFocus(false)}/>
+                <textarea name="content" value={note.content} placeholder="Take a Note" className={styles.textArea} onChange={handleChange} onFocus={()=>setNoteAreaFocus(true)} />
                 <Fab size={tabScreen?"small":"medium"} aria-label="add" className={styles.addBtn} onClick={submitNote}>
                     <AddIcon />
                 </Fab>
