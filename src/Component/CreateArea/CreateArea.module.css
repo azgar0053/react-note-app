@@ -23,7 +23,7 @@
     outline: none;
     font-size: 1.5rem;
     font-weight:bolder !important;
-    overflow: scroll;
+    overflow: auto;
 }
 
 
@@ -33,7 +33,7 @@
     width: 100%;
     outline: none;
     font-size: 1rem;
-    overflow: scroll;
+    overflow: auto;
 }
 
 .addBtn {
